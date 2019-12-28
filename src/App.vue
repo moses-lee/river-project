@@ -1,7 +1,6 @@
 <template>
   <v-app>
     <InputFields @clicked="showValues"></InputFields>
-
   </v-app>
 </template>
 
