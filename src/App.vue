@@ -13,11 +13,6 @@ export default {
 
   components: {
     InputFields,
-  },
-  methods: {
-    showValues(value) {
-      document.write(value);
-    }
   }
 };
 </script>
