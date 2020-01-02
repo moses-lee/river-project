@@ -1,16 +1,5 @@
 <template>
   <v-container fluid>
-    <v-row justify="center">
-      <v-col cols="6" class="text-center mt-12">
-        <h4 class="display-3">River Project</h4>
-      </v-col>
-    </v-row>
-
-    <v-row justify="center">
-      <v-col cols="6" class="text-center mb-6">
-        <a class="subtitle" href="https://github.com/moses-lee/river-project">github</a>
-      </v-col>
-    </v-row>
 
     <v-row justify="center" class="mt-6">
       <v-col cols="2">
