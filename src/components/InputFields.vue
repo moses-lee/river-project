@@ -102,7 +102,7 @@
         </v-card-text>
         <v-card-actions>
           <v-spacer></v-spacer>
-          <v-btn text @click="showDataDialog = true">Ok</v-btn>
+          <v-btn text @click="showDataDialog = false">Ok</v-btn>
         </v-card-actions>
       </v-card>
     </v-dialog>
