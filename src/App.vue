@@ -16,7 +16,7 @@
 
       <v-row justify="center">
         <v-col cols="12">
-          <InputFields @clicked="showValues"></InputFields>
+          <InputFields></InputFields>
         </v-col>
       </v-row>
     </v-container>
