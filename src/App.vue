@@ -1,15 +1,17 @@
 <template>
   <v-app>
+    <v-row justify="center" class="light-blue darken-3">
+      <v-col cols="6" class="text-center mt-12">
+        <h4 class="display-3 white--text">River Project</h4>
+      </v-col>
+    </v-row>
     <v-container fluid>
       <v-row justify="center">
-        <v-col cols="6" class="text-center mt-12">
-          <h4 class="display-3">River Project</h4>
-        </v-col>
-      </v-row>
-      
-      <v-row justify="center">
         <v-col cols="6" class="text-center">
-          <a class="subtitle mr-4" href="https://tomrocksmaths.files.wordpress.com/2019/06/crawfordtj-thesis.pdf">Based on works by Tom Crawford</a>
+          <a
+            class="subtitle mr-4"
+            href="https://tomrocksmaths.files.wordpress.com/2019/06/crawfordtj-thesis.pdf"
+          >Based on works by Tom Crawford</a>
           <a class="subtitle ml-4" href="https://github.com/moses-lee/river-project">github</a>
         </v-col>
       </v-row>

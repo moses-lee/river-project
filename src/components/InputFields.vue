@@ -63,39 +63,39 @@
         </v-row>
         <v-row justify="center">
           <v-col cols="6" class="text-center">
-            <v-btn x-large color="cyan" @click="onCalculate" :disabled="!isValid">Calculate</v-btn>
+            <v-btn x-large color="cyan lighten-3" @click="onCalculate" :disabled="!isValid">Calculate</v-btn>
           </v-col>
         </v-row>
       </v-container>
     </v-form>
-    <v-dialog v-model="showDataDialog" width="500px">
+    <v-dialog v-model="showDataDialog" width="320px">
       <v-card>
-        <v-card-title class="py-4">
+        <v-card-title class="py-4 headline cyan lighten-3">
           <h4>{{name}} Data</h4>
         </v-card-title>
-        <v-card-text>
+        <v-card-text class="mt-6">
           <v-row>
             <v-col cols="6" class="text-center subtitle-1">
               <span>Width:</span>
             </v-col>
-            <v-col cols="6" class="text-center subtitle-1">
-              <span>{{payload.width}} meters</span>
+            <v-col cols="6" class="text-left subtitle-1">
+              <span>{{payload.width}} m</span>
             </v-col>
           </v-row>
           <v-row>
             <v-col cols="6" class="text-center subtitle-1">
               <span>Depth:</span>
             </v-col>
-            <v-col cols="6" class="text-center subtitle-1">
-              <span>{{payload.depth}} meters</span>
+            <v-col cols="6" class="text-left subtitle-1">
+              <span>{{payload.depth}} m</span>
             </v-col>
           </v-row>
           <v-row>
             <v-col cols="6" class="text-center subtitle-1">
               <span>Velocity:</span>
             </v-col>
-            <v-col cols="6" class="text-center subtitle-1">
-              <span>{{payload.velocity}} meters per second</span>
+            <v-col cols="6" class="text-left subtitle-1">
+              <span>{{payload.velocity}} m/s</span>
             </v-col>
           </v-row>
         </v-card-text>
@@ -181,9 +181,6 @@ export default {
       this.payload.depth = this.round(this.get_depth());
       this.payload.velocity = this.round(this.get_velocity());
       this.showDataDialog = true;
-    },
-    checkInput() {
-      return true;
     }
   }
 };
